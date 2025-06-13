@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis Compras</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="compras-header">
+    <h2>Mis Compras</h2>
+    <button class="bot-compras" onclick="window.location.href='productos.html'">Atrás</button>
+  </header>
+
+  <main class="compras-contenedor">
+    <div class="compra-item">
+      <img src="img/glifosato.png" alt="Glifosato">
+      <div class="info">
+        <h3>Glifosato Ultra</h3>
+        <p>Vendedor: Juan Pérez</p>
+        <p>Último mensaje: "Sí, me queda una unidad"</p>
+        <button onclick="window.location.href='chat.html?producto=Glifosato&usuario=Juan'">Ver conversación</button>
+      </div>
+    </div>
+
+    <div class="compra-item">
+      <img src="img/fendona.jpg" alt="Fendona">
+      <div class="info">
+        <h3>Fendona 6SC</h3>
+        <p>Vendedora: María Rodríguez</p>
+        <p>Último mensaje: "Claro, puedo enviarlo mañana"</p>
+        <button onclick="window.location.href='chat.html?producto=Fendona&usuario=María'">Ver conversación</button>
+      </div>
+    </div>
+  </main>
+     <script src="script.js"></script>
+</body>
+</html>

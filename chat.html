@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="chat-header-superior">
+    <span id="titulo-chat">Chat</span>
+    <button class="btn-atras" onclick="window.location.href='compras.html'">Atrás</button>
+  </header>
+
+  <main class="chat-layout">
+    <section class="panel-chat">
+      <header id="encabezado-chat" class="chat-header">
+        Juan
+      </header>
+      <div id="chat-mensajes" class="chat-mensajes">
+        <p style="color:gray">Cargando mensajes...</p>
+      </div>
+      <form id="form-chat" class="chat-input">
+        <input type="text" id="mensaje" placeholder="Escribe tu mensaje..." disabled>
+        <button type="submit" disabled>Enviar</button>
+      </form>
+    </section>
+  </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

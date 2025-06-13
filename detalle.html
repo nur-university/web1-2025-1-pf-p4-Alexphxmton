@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto - AgroPlace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <header>
+    <h1>AgroPlace</h1>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="#">Chat</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+  <section class="detalle-chat-container">
+    <div class="columna-izquierda">
+        <img src="img/glifosato.png" alt="Imagen del Producto" class="imagen-principal">
+        <div class="imagenes-miniatura">
+            <img src="img/glifosato1.jpg" onclick="cambiarImagen('img/glifosato1.jpg')">
+            <img src="img/glifosato.png" onclick="cambiarImagen('img/glifosato.png')">
+            <img src="img/glifosato.png" onclick="cambiarImagen('img/glifosato.png')">
+        </div>
+    </div>
+
+    <div class="columna-derecha">
+        <div class="detalles-producto">
+            <h2>Glifosato</h2>
+            <p><strong>Precio:</strong> 80 bs</p>
+            <p><strong>Publicado el:</strong> 9 de junio de 2025</p>
+            <p><strong>Descripción:</strong> Producto esencial para el control de malezas.</p>
+            <button class="guardar">Guardar Anuncio</button>
+        </div>
+
+        <div class="chat">
+            <h2>Chat con el vendedor</h2>
+            <div class="chat-box">
+                <div class="mensajes">
+                    <p><strong>Vendedor:</strong> ¡Hola! ¿Cómo puedo ayudarte?</p>
+                </div>
+                <input type="text" placeholder="Escribe tu mensaje..." class="input-chat">
+                <button class="enviar">Enviar</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        <p>&copy; 2025 AgroPlace - Todos los derechos reservados.</p>
+    </footer>
+      <script src="script.js"></script>
+</body>
+</html>

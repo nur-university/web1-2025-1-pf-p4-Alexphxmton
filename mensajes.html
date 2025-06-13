@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat - AgroMarket</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="chat-header-superior">
+  <span class="titulo-mensajes">Mensajes</span>
+  <button class="btn-atras" onclick="window.location.href='productos.html'">Atrás</button>
+  
+</header>
+
+
+  <div class="chat-layout">
+
+  <aside class="panel-publicaciones">
+    <h3>Ventas</h3>
+    <ul id="lista-publicaciones">
+      <li data-producto="Glifosato">Glifosato</li>
+      <li data-producto="Fendona">Fendona</li>
+      <li data-producto="Dimetoxion">Dimetoxion</li>
+    </ul>
+  </aside>
+
+
+  <main class="panel-chat">
+    <button class="btn-volver-movil" id="btn-volver-chat" onclick="retrocederDesdeChat()">←</button>
+    <header id="encabezado-chat">Chat</header>
+    <div id="chat-mensajes" class="chat-mensajes"></div>
+    <form id="form-chat" class="chat-input">
+  <input type="text" id="mensaje" placeholder="Escribe tu mensaje..." disabled>
+  <button type="submit" disabled>Enviar</button>
+</form>
+  </main>
+
+ 
+<aside class="panel-interesados">
+  <button class="btn-volver-movil" id="btn-volver-interesados" onclick="retrocederDesdeInteresados()">←</button>
+  <h3>Interesados</h3>
+  <ul id="lista-interesados">
+    <li>Selecciona una publicación</li>
+  </ul>
+</aside>
+</div>
+
+    
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - AgroPlace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <header>
+    <h1>AgroPlace</h1>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="menu">
+        <ul>
+        <li class="dropdown">
+        <a href="#" onclick="toggleDropdown(event)">Mensajes ▾</a>
+        <ul class="submenu" id="submenu-mensajes">
+        <li><a href="compras.html">Compras</a></li>
+        <li><a href="mensajes.html">Ventas</a></li>
+  </ul>
+</li>
+            <li><a href="#">Usuario</a></li>
+            <li><a href="#">Guardado</a></li>
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <section class="busqueda">
+        <input type="text" placeholder="Buscar productos..." class="input-busqueda">
+        <select class="filtro">
+            <option value="">Todas las categorías</option>
+            <option value="frutas">Herbicidas</option>
+            <option value="maquinaria">Insecticidas</option>
+            <option value="insumos">fungicidas</option>
+        </select>
+    </section>
+
+    <section class="productos">
+        <h2>Lista de Productos</h2>
+        <div class="grid-productos">
+            <div class="producto">
+                <img src="img/glifosato.png" alt="Glifosato">
+                <h3>Glifosato</h3>
+                <p>80 bs</p>
+                <a href="detalle.html" class="boton">Ver Detalles</a>
+            </div>
+            <div class="producto">
+                <img src="img/fendona.jpg" alt="Fendona">
+                <h3>Fendona</h3>
+                <p>130 bs</p>
+                <a href="detalle.html" class="boton">Ver Detalles</a>
+            </div>
+            <div class="producto">
+                <img src="img/AbirFungi.jpg" alt="Abir">
+                <h3>Abir</h3>
+                <p>250 bs</p>
+                <a href="detalle.html" class="boton">Ver Detalles</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AgroPlace - Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

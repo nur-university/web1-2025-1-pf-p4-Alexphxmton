@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroPlace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header>
+    <h1>AgroPlace</h1>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="productos.html">Anuncios</a></li>
+            <li><a href="#">Categorías</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+        </ul>
+    </nav>
+</header>
+
+    
+    <main>
+        <section class="presentacion">
+            <h2>Encuentra lo mejor en productos agropecuarios</h2>
+            <p>Explora nuestras categorías y conecta con productores locales.</p>
+            <a href="productos.html" class="boton">Ver Productos</a>
+        </section>
+        
+       <section class="categorias">
+    <h2>Categorías Destacadas</h2>
+    <div class="grid-categorias">
+        <div class="categoria">
+            <img src="img/Insecticidas.jpg" alt="Insecticidas">
+            <h3>Insecticidas</h3>
+            <a href="#" class="boton">Explorar</a>
+        </div>
+        <div class="categoria">
+            <img src="img/Herbicidas.jpeg" alt="Herbicidas">
+            <h3>Herbicidas</h3>
+            <a href="#" class="boton">Explorar</a>
+        </div>
+        <div class="categoria">
+            <img src="img/fungicidas.jpeg" alt="Fungicidas">
+            <h3>Fungicidas</h3>
+            <a href="#" class="boton">Explorar</a>
+        </div>
+          <div class="categoria">
+            <img src="img/Nematicidas.jpg" alt="Nematicidas">
+            <h3>Nematicidas</h3>
+            <a href="#" class="boton">Explorar</a>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+        <section class="destacados">
+    <h2>Anuncios Destacados</h2>
+    <div class="grid-anuncios">
+        <div class="anuncio">
+            <img src="img/glifosato.png" alt="Tomates Orgánicos">
+            <h3>Glifosato</h3>
+            <p>80 Bs</p>
+            <a href="detalle.html" class="boton">Ver Detalles</a>
+        </div>
+        <div class="anuncio">
+            <img src="img/fendona.jpg" alt="Tractor John Deere">
+            <h3>Fendona</h3>
+            <p>130 Bs</p>
+            <a href="detalle.html" class="boton">Ver Detalles</a>
+        </div>
+        <div class="anuncio">
+            <img src="img/AbirFungi.jpg" alt="Fertilizante Orgánico">
+            <h3>Abir</h3>
+            <p>250 Bs</p>
+            <a href="detalle.html" class="boton">Ver Detalles</a>
+        </div>
+    </div>
+</section>
+<section class="como-funciona">
+    <h2>¿Cómo Funciona?</h2>
+    <div class="preguntas">
+        <div class="pregunta" onclick="toggleRespuesta(1)">
+            <h3>¿Cómo puedo publicar un producto?</h3>
+            <div class="respuesta" id="respuesta1">
+                <p>Para publicar un producto, debes registrarte en AgroPlace y acceder a tu perfil para agregar anuncios.</p>
+            </div>
+        </div>
+        <div class="pregunta" onclick="toggleRespuesta(2)">
+            <h3>¿Cómo contacto a un vendedor?</h3>
+            <div class="respuesta" id="respuesta2">
+                <p>Dentro del detalle del anuncio, encontrarás un botón para enviar mensajes y empezar la conversación.</p>
+            </div>
+        </div>
+        <div class="pregunta" onclick="toggleRespuesta(3)">
+            <h3>¿Cómo funcionan los pagos?</h3>
+            <div class="respuesta" id="respuesta3">
+                <p>AgroPlace facilita el contacto entre compradores y vendedores, pero los pagos se realizan directamente entre ellos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 AgroPlace - Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
